@@ -72,7 +72,6 @@ USBHOST_XS_FUNC_ROOTHUB_HOTPLUG	usb_sysfs_tests.sh -t hotplug
 USBHOST_XS_FUNC_RW_2.0_FLASH	usb_read_write_tests.sh -b 1MB -c 100 -p 2.0 -t flash
 USBHOST_XS_FUNC_RW_3.0_FLASH	usb_read_write_tests.sh -b 1MB -c 100 -p 3.0 -t flash
 USBHOST_XS_FUNC_RW_3.1_UAS	usb_read_write_tests.sh -b 1MB -c 100 -p 3.1 -t uas
-USBHOST_XS_FUNC_TRACE	usb_trace_tests.sh -t host
 USBTYPEC_XS_FUNC_DATAROLE_POLLING	usb_typec_tests.sh -t datap
 USBTYPEC_XS_FUNC_KCONFIG_CHECK	usb_typec_tests.sh -t kconfig
 USBTYPEC_XS_FUNC_MODULE_CHECK	usb_typec_tests.sh -t module
@@ -84,7 +83,6 @@ USBTYPEC_XS_FUNC_STORAGE_SYSFS_CHECK	usb_typec_tests.sh -t storage
 USBTYPEC_XS_FUNC_SUPPORTED_ACCESSORY_MODES_POLLING	usb_typec_tests.sh -t supported_accessory_modes
 USBTYPEC_XS_FUNC_SYSFS	usb_typec_tests.sh -t sysfsinfo
 USBTYPEC_XS_FUNC_SYSFS_ALL	usb_typec_tests.sh -t all
-USBTYPEC_XS_FUNC_TRACE	usb_trace_tests.sh -t ucsi
 USBTYPEC_XS_FUNC_VCONN_SOURCE_POLLING	usb_typec_tests.sh -t vconn_source
 USB_XS_FUNC_CHK_XHCI_DMESG	xhci_check.sh dmesg
 USB_XS_FUNC_CHK_XHCI_SYSFS	xhci_check.sh sysfs
