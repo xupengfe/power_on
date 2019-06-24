@@ -1,0 +1,102 @@
+TH_MSU_XS_FUNC_BIND_UNBIND_DRIVER	bind_unbind_driver.sh "msc"
+TH_MSU_XS_FUNC_DEV_CHECK	driver_sysfs.sh -d "msc" -s "a"
+TH_MSU_XS_FUNC_DRV_CHECK	driver_sysfs.sh -d "msc" -p
+TH_PTI_XS_FUNC_BIND_UNBIND_DRIVER	bind_unbind_driver.sh "pti"
+TH_PTI_XS_FUNC_DRV_CHECK	driver_sysfs.sh -d "pti" -p
+TH_STH_XS_FUNC_BIND_UNBIND_DRIVER	bind_unbind_driver.sh "sth"
+TH_STH_XS_FUNC_DEV_CHECK	driver_sysfs.sh -d "sth" -s "a"
+TH_XS_FUNC_BIND_UNBIND_DRIVER	bind_unbind_driver.sh "ith"
+TH_XS_FUNC_DEV_CHECK	driver_sysfs.sh -d "ith" -s "a"
+TH_XS_FUNC_DUMMY_STM	intel_th_tests.sh -t dummy_stm
+TH_XS_FUNC_GTH_PORT_INFO	intel_th_tests.sh -t port_sys
+TH_XS_FUNC_GTH_SWITCH	intel_th_tests.sh -t gth_switch
+TH_XS_FUNC_HOST_MODE	intel_th_tests.sh -t host_mode
+TH_XS_FUNC_HOST_MODULE	intel_th_tests.sh -t host_module
+TH_XS_FUNC_IOCTL_GET_ID	intel_th_tests.sh -t ioctl_get
+TH_XS_FUNC_IOCTL_SET_ID	intel_th_tests.sh -t ioctl_set
+TH_XS_FUNC_LPP_BASIC	intel_th_tests.sh -t output_basic -o lpp
+TH_XS_FUNC_LPP_WITH_MSC	intel_th_tests.sh -t output_msc -o lpp -s default -d 0-msc0 -p basic
+TH_XS_FUNC_MMAP_TRACE	intel_th_tests.sh -t mmap -d 0-msc0
+TH_XS_FUNC_MSU_BASIC	intel_th_tests.sh -t msu
+TH_XS_FUNC_MSU_ENABLE_DISABLE	intel_th_tests.sh -t msu_enable_disable
+TH_XS_FUNC_MSU_SYSFS	intel_th_tests.sh -t msu_sysfs
+TH_XS_FUNC_MULTI_TH_DEVICE	intel_th_tests.sh -t mth
+TH_XS_FUNC_MULTI_TH_DEVICE_W_CPU	intel_th_tests.sh -t mth_cpu
+TH_XS_FUNC_PCH_MSC0_CONSOLE_TRACE_BASIC	intel_th_tests.sh -t msu_trace -s console -d 0-msc0 -p basic
+TH_XS_FUNC_PCH_MSC0_DEFAULT_TRACE_BASIC	intel_th_tests.sh -t msu_trace -s default -d 0-msc0 -p basic
+TH_XS_FUNC_PCH_MSC_UNWRAP	intel_th_tests.sh -t unwrap -d 0-msc0
+TH_XS_FUNC_PCH_MSC_WRAP	intel_th_tests.sh -t wrap -d 0-msc0
+TH_XS_FUNC_PTI_BASIC	intel_th_tests.sh -t output_basic -o pti
+TH_XS_FUNC_PTI_WITH_MSC	intel_th_tests.sh -t output_msc -o pti -s default -d 0-msc0 -p basic
+TH_XS_FUNC_STH_DEV	intel_th_tests.sh -t sth_dev
+TH_XS_FUNC_STM_POLICY_DUMMY	intel_th_tests.sh -t stm_policy_dummy
+TH_XS_FUNC_STM_POLICY_MASTER_CHANNEL_SET	intel_th_tests.sh -t stm_policy_set
+TH_XS_FUNC_STM_POLICY_STH	intel_th_tests.sh -t stm_policy_sth
+TH_XS_FUNC_STM_PROTOCOL_BASIC	intel_th_tests.sh -t protocol_basic
+TH_XS_FUNC_STM_SOURCE_ALL_WITH_DUMMY	intel_th_tests.sh -t stm_source_all_dummy
+WDT_XS_FUNC_BIND_UNBIND_DRV	bind_unbind_driver.sh "wdt"
+WDT_XS_FUNC_DEV_CHECK	driver_sysfs.sh -d "wdt" -s "h"
+WDT_XS_FUNC_DRV_CHECK	driver_sysfs.sh -d "wdt" -p
+WDT_XS_FUNC_GETTIMEOUT	wdt_tests.sh -i "gettimeout"
+WDT_XS_FUNC_KEEPALIVE	wdt_tests.sh -i "keepalive"
+WDT_XS_FUNC_SETTIMEOUT	wdt_tests.sh -i "settimeout"
+WDT_XS_FUNC_SETTIMEOUT_10SECS	wdt_tests.sh -i "settimeout" -a "10"
+WDT_XS_FUNC_SETTIMEOUT_25SECS	wdt_tests.sh -i "settimeout" -a "25"
+WDT_XS_FUNC_SETTIMEOUT_50SECS	wdt_tests.sh -i "settimeout" -a "50"
+WDT_XS_FUNC_SETTIMEOUT_RNDM	wdt_tests.sh -i "settimeout" -r
+WDT_XS_FUNC_WRITE	wdt_tests.sh -i "write"
+GPIO_XS_FUNC_BIND_UNBIND_DRV	bind_unbind_driver.sh "gpio"
+GPIO_XS_FUNC_CTRL_INTERFACES	gpio_chips.sh -f
+GPIO_XS_FUNC_DEV_CHECK	driver_sysfs.sh -d "gpio" -s "h"
+GPIO_XS_FUNC_DRV_CHECK	driver_sysfs.sh -d "gpio" -p
+GPIO_XS_FUNC_EXPORT_GPIOS	gpio_chips.sh -g "gpios" -e
+GPIO_XS_FUNC_GET_CHIPS	gpio_chips.sh -g "chips"
+GPIO_XS_FUNC_GET_GPIOS	gpio_chips.sh -g "gpios"
+GPIO_XS_FUNC_GET_SIGNALS	gpio_chips.sh -g "gpios" -e -s
+UFS_XS_FUNC_DEV_CHECK	blk_device_bat_test.sh -d "ufs" -c "2"
+UFS_XS_FUNC_DRV_CHECK	blk_device_bat_test.sh -d "ufs" -c "1"
+UFS_XS_FUNC_GET_NAME	blk_device_bat_test.sh -d "ufs" -c "3"
+UFS_XS_FUNC_MOUNT_PART	blk_device_bat_test.sh -d "ufs" -c "4"
+USBHOST_M_FUNC_EXT2_DD_RW_1G	blk_device_dd_readwrite_test.sh -f 'ext2' -b '10M' -c '100' -d 'usb'
+USBHOST_XS_FUNC_3.1_ROOTHUB	xhci_check.sh 3.1
+USBHOST_XS_FUNC_3.1_ROOTHUB_INFO	xhci_check.sh 3.1_info
+USBHOST_XS_FUNC_DEV_CHECK	blk_device_bat_test.sh -d "usb" -c "2"
+USBHOST_XS_FUNC_DRV_CHECK	blk_device_bat_test.sh -d "usb" -c "1"
+USBHOST_XS_FUNC_EP_POLL	usb_sysfs_tests.sh -t ep
+USBHOST_XS_FUNC_GET_NAME	blk_device_bat_test.sh -d "usb" -c "3"
+USBHOST_XS_FUNC_LPM_2.0_FLASH	usb_lpm_tests.sh -p 2.0 -t flash
+USBHOST_XS_FUNC_LPM_3.0_FLASH	usb_lpm_tests.sh -p 3.0 -t flash
+USBHOST_XS_FUNC_LPM_3.1_UAS	usb_lpm_tests.sh -p 3.1 -t uas
+USBHOST_XS_FUNC_MOUNT_PART	blk_device_bat_test.sh -d "usb" -c "4"
+USBHOST_XS_FUNC_ROOTHUB_HOTPLUG	usb_sysfs_tests.sh -t hotplug
+USBHOST_XS_FUNC_RW_2.0_FLASH	usb_read_write_tests.sh -b 1MB -c 100 -p 2.0 -t flash
+USBHOST_XS_FUNC_RW_3.0_FLASH	usb_read_write_tests.sh -b 1MB -c 100 -p 3.0 -t flash
+USBHOST_XS_FUNC_RW_3.1_UAS	usb_read_write_tests.sh -b 1MB -c 100 -p 3.1 -t uas
+USBHOST_XS_FUNC_TRACE	usb_trace_tests.sh -t host
+USBTYPEC_XS_FUNC_DATAROLE_POLLING	usb_typec_tests.sh -t datap
+USBTYPEC_XS_FUNC_KCONFIG_CHECK	usb_typec_tests.sh -t kconfig
+USBTYPEC_XS_FUNC_MODULE_CHECK	usb_typec_tests.sh -t module
+USBTYPEC_XS_FUNC_PORT_TYPE_POLLING	usb_typec_tests.sh -t port_type
+USBTYPEC_XS_FUNC_POWERROLE_POLLING	usb_typec_tests.sh -t powerp
+USBTYPEC_XS_FUNC_POWER_OPERATION_MODE_POLLING	usb_typec_tests.sh -t power_operation_mode
+USBTYPEC_XS_FUNC_RW_3.1_UAS	usb_read_write_tests.sh -b 1MB -c 100 -p 3.1 -t uas
+USBTYPEC_XS_FUNC_STORAGE_SYSFS_CHECK	usb_typec_tests.sh -t storage
+USBTYPEC_XS_FUNC_SUPPORTED_ACCESSORY_MODES_POLLING	usb_typec_tests.sh -t supported_accessory_modes
+USBTYPEC_XS_FUNC_SYSFS	usb_typec_tests.sh -t sysfsinfo
+USBTYPEC_XS_FUNC_SYSFS_ALL	usb_typec_tests.sh -t all
+USBTYPEC_XS_FUNC_TRACE	usb_trace_tests.sh -t ucsi
+USBTYPEC_XS_FUNC_VCONN_SOURCE_POLLING	usb_typec_tests.sh -t vconn_source
+USB_XS_FUNC_CHK_XHCI_DMESG	xhci_check.sh dmesg
+USB_XS_FUNC_CHK_XHCI_SYSFS	xhci_check.sh sysfs
+USB_XS_FUNC_D3HOT_ENABLE	check_suspend_mode_set.sh
+USB_XS_FUNC_LIST_USB_DEV	listing_usb_devices.sh
+USB_XS_FUNC_SYSFS_CTRL	verify_sysfs_xhci_controllers.sh
+USB_XS_FUNC_SYSFS_NEW_ID	add_rm_device_id.sh -t add_id
+USB_XS_FUNC_SYSFS_RM_ID	add_rm_device_id.sh -t remove_id
+TPM_XS_FUNC_AUTH	tpm_func.sh -p "ecmd" -c "python2 -m unittest -v tpm2_smoke.SmokeTest.test_seal_with_auth" -f "fail"
+TPM_XS_FUNC_LONG_AUTH	tpm_func.sh -p "ecmd" -c "python2 -m unittest -v tpm2_smoke.SmokeTest.test_seal_with_too_long_auth" -f "fail"
+TPM_XS_FUNC_SHORT_CMD	tpm_func.sh -p "ecmd" -c "python2 -m unittest -v tpm2_smoke.SmokeTest.test_too_short_cmd" -f "fail"
+TPM_XS_FUNC_WRONG_AUTH	tpm_func.sh -p "ecmd" -c "python2 -m unittest -v tpm2_smoke.SmokeTest.test_unseal_with_wrong_auth" -f "fail"
+TPM_XS_BAT_CONFIG_PCIE_TPM	tpm_bat.sh -k "CONFIG_IWLWIFI_PCIE_RTPM=y"
+TPM_XS_BAT_CONFIG_RANDOM_TPM	tpm_bat.sh -k "CONFIG_HW_RANDOM_TPM=y"
+TPM_XS_BAT_CONFIG_TCG_TPM	tpm_bat.sh -k "CONFIG_TCG_TPM=y"

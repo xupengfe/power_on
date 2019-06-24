@@ -1,0 +1,190 @@
+ADAPTIVE_PEBS_XS_FUNC_BENCHMARK	apebs_tests.sh -t benchmark -w 0
+ADAPTIVE_PEBS_XS_FUNC_DATA_SRC	apebs_tests.sh -t data_src -w 0
+ADAPTIVE_PEBS_XS_FUNC_IP_LEVEL_1	apebs_tests.sh -t ip_1 -w 0
+ADAPTIVE_PEBS_XS_FUNC_IP_LEVEL_2	apebs_tests.sh -t ip_2 -w 0
+ADAPTIVE_PEBS_XS_FUNC_LARGE_PEBS	apebs_tests.sh -t large_pebs -w 0
+ADAPTIVE_PEBS_XS_FUNC_LBR_LEVEL_1	apebs_tests.sh -t lbr_1 -w 0
+ADAPTIVE_PEBS_XS_FUNC_WITH_SR	apebs_tests.sh -t sr -w 0
+ADAPTIVE_PEBS_XS_FUNC_XMM_LEVEL_1	apebs_tests.sh -t xmm_1 -w 0
+CPU_XS_BAT_AESNI_CPU_ID_TEST	cpu_bat.sh -n aesni -p "1 0 0 0 c 25"
+CPU_XS_BAT_AESNI_CPU_INFO_TEST	cpu_bat.sh -n aesni -f aes
+CPU_XS_BAT_FSGSBASE_CPU_ID_TEST	cpu_bat.sh -n fsgsbase -p "7 1 0 1 b 0"
+CPU_XS_BAT_FSGSBASE_CPU_INFO_TEST	cpu_bat.sh -n fsgsbase -f fsgsbase
+CPU_XS_BAT_GFNI_CPU_ID_TEST	cpu_bat.sh -n gfni -p "7 1 0 1 c 8"
+CPU_XS_BAT_GFNI_CPU_INFO_TEST	cpu_bat.sh -n gfni -f gfni
+CPU_XS_BAT_RDPID_CPU_ID_TEST	cpu_bat.sh -n rdpid -p "7 1 0 1 c 22"
+CPU_XS_BAT_RDPID_CPU_INFO_TEST	cpu_bat.sh -n rdpid -f rdpid
+CPU_XS_BAT_SHANI_CPU_INFO_TEST	cpu_bat.sh -n shani -f sha_ni
+CPU_XS_BAT_SMEP_CPU_ID_TEST	cpu_bat.sh -n smep -p "7 0 0 0 b 7"
+CPU_XS_BAT_SMEP_CPU_INFO_TEST	cpu_bat.sh -n smep -f smep
+CPU_XS_BAT_VAES_CPU_ID_TEST	cpu_bat.sh -n vaes -p "7 1 0 1 c 9"
+CPU_XS_BAT_VAES_CPU_INFO_TEST	cpu_bat.sh -n vaes -f vaes
+CPU_XS_BAT_VBMI2_CPU_ID_TEST	cpu_bat.sh -n vbmi -p "7 1 0 1 c 6"
+CPU_XS_BAT_VBMI2_CPU_INFO_TEST	cpu_bat.sh -n vbmi -f vbmi2
+CPU_XS_BAT_VBMI_CPU_ID_TEST	cpu_bat.sh -n vbmi -p "7 1 0 1 c 1"
+CPU_XS_BAT_VBMI_CPU_INFO_TEST	cpu_bat.sh -n vbmi -f vbmi
+CPU_XS_BAT_VNNI_CPU_ID_TEST	cpu_bat.sh -n vnni -p "7 1 0 1 c 11"
+CPU_XS_BAT_VNNI_CPU_INFO_TEST	cpu_bat.sh -n vnni -f vnni
+CPU_XS_BAT_VP2_CPU_ID_TEST	cpu_bat.sh -n vp2 -p "7 0 0 0 d 8"
+CPU_XS_BAT_VP2_CPU_INFO_TEST	cpu_bat.sh -n vp2 -f "avx512_vp2intersect"
+CPU_XS_BAT_XSAVE_CPU_INFO_TEST	cpu_bat.sh -n xsave -f xsave
+CPU_XS_FUNC_RDPID_VDSO_FUNC	rdpid_func.sh -n test_vdso -p null
+CPU_XS_FUNC_RDPID_VGETCPU_SPEED	rdpid_func.sh -n timing_test -p "50M vgetcpu"
+CPU_XS_FUNC_SL_OFF_ROOT_MODE	sl_func.sh -a off -m root
+CPU_XS_FUNC_SL_OFF_USER_MODE	sl_func.sh -a off -m user
+CPU_XS_FUNC_SL_ON_DEFAULT	cpu_bat.sh -n sl -f split_lock_detect
+CPU_XS_FUNC_SL_ON_ROOT_MODE	sl_func.sh -a on -m root
+CPU_XS_FUNC_SL_ON_USER_MODE	sl_func.sh -a on -m user
+CPU_XS_FUNC_VBMI_RANDOM	vbmi_func.sh -n vpmadd -p random
+CPU_XS_FUNC_VBMI_ZMM2_0_FF	vbmi_func.sh -n vpmadd -p "0 ff b"
+CPU_XS_FUNC_VBMI_ZMM2_18_FF	vbmi_func.sh -n vpmadd -p "18 ff b"
+CPU_XS_FUNC_VBMI_ZMM2_19_FF	vbmi_func.sh -n vpmadd -p "19 ff b"
+CPU_XS_FUNC_VBMI_ZMM2_1F_FF	vbmi_func.sh -n vpmadd -p "1F ff b"
+CPU_XS_FUNC_VBMI_ZMM2_1_FF	vbmi_func.sh -n vpmadd -p "1 ff b"
+CPU_XS_FUNC_XSAVE_AVXMDB	xsave_func.sh -n avxmdb -p "null"
+CPU_XS_FUNC_XSAVE_CET_SYS_VERIFY	xsave_func.sh -n ptrace_sys_states -p "cet"
+CPU_XS_FUNC_XSAVE_PT_SYS_VERIFY	xsave_func.sh -n ptrace_sys_states -p "null"
+CPU_XS_FUNC_XSAVE_SCHEDCHECK_1088	xsave_func.sh -n schedcheck -p "1088"
+CPU_XS_FUNC_XSAVE_SCHEDCHECK_NULL	xsave_func.sh -n schedcheck -p "null"
+CPU_XS_FUNC_XSAVE_THREADCHECK_LOAD	xsave_func.sh -n threadcheck_load -p "null"
+PT_FUNC_BRANCH_TRACE_STORAGE	BAT-ipt 2
+PT_XS_FUNC_BRANCH	branch
+PT_XS_FUNC_CPL_KERNEL	cpl 2
+PT_XS_FUNC_CPL_USER	cpl 1
+PT_XS_FUNC_FT_NONROOT	ipt_nonroot.sh -t ft
+PT_XS_FUNC_FT_PACKGE_CPUS_EXCLUDE_KERNEL	BAT-ipt 5 2
+PT_XS_FUNC_FT_PACKGE_CPUS_EXCLUDE_NO	BAT-ipt 5 0
+PT_XS_FUNC_FT_PACKGE_CPUS_EXCLUDE_USER	BAT-ipt 5 1
+PT_XS_FUNC_FT_PACKGE_EXCLUDE_KERNEL	BAT-ipt 3 2
+PT_XS_FUNC_FT_PACKGE_EXCLUDE_NO	BAT-ipt 3 0
+PT_XS_FUNC_FT_PACKGE_EXCLUDE_USER	BAT-ipt 3 1
+PT_XS_FUNC_PID	pid_test
+PT_XS_FUNC_PSB	psb
+PT_XS_FUNC_SN_NONROOT	ipt_nonroot.sh -t sn
+PT_XS_FUNC_SN_PACKGE_EXCLUDE_KERNEL	BAT-ipt 4 2
+PT_XS_FUNC_SN_PACKGE_EXCLUDE_NO	BAT-ipt 4 0
+PT_XS_FUNC_SN_PACKGE_EXCLUDE_USER	BAT-ipt 4 1
+PT_XS_FUNC_SYSFS	ipt_sysfs_check.sh -t path
+PT_XS_FUNC_SYSFS_CAPS	ipt_sysfs_check.sh -t caps
+PT_XS_FUNC_SYSFS_TIME	ipt_sysfs_check.sh -t time
+PT_XS_FUNC_TOPA_USAGE	BAT-ipt 1
+RTC_XS_FUNC_HWCLOCK_TIME_READ	rtc_hwclock.sh -g "all"
+RTC_XS_FUNC_HWCLOCK_TIME_WRITE	rtc_hwclock.sh -r "19980318.012504" -u
+RTC_XS_FUNC_IOCTL_RONLY_RD_1	rtc_tests -device /dev/rtc -loop 1 -ioctltest readtime -readonly
+RTC_XS_FUNC_IOCTL_RONLY_RD_10	rtc_tests -device /dev/rtc -loop 10 -ioctltest readtime -readonly
+RTC_XS_FUNC_MODIFY_IRQ_FREQ	rtc_tests -device /dev/rtc -ioctltest modifyirqfreq -ioctltestarg ${RTC_MAX_IRQ_FREQ:-512}
+RTC_XS_FUNC_NEG_SETGETTIME	rtc_tests -device /dev/rtc -ioctltest setgettime -readonly
+RTC_XS_FUNC_PROC_INFO_CHECK_1	rtc_driver_info_check.sh -c "rtc_time" -c "rtc_date" -c "alrm_time" -c "alrm_date" -c "alarm_IRQ" -c "alrm_pending" -c "update_IRQ_enable"
+RTC_XS_FUNC_PROC_INFO_CHECK_2	rtc_driver_info_check.sh -c "periodic_IRQ_enable" -c "periodic_IRQ_frequency" -c "max_user_IRQ_frequency" -c "24h"
+RTC_XS_FUNC_PROC_INFO_CHECK_3	rtc_driver_info_check.sh -c "BCD" -c "periodic_IRQ" -c "update_IRQ" -c "DST_enable" -c "BCD" -c "HPET_emulated"
+RTC_XS_FUNC_READTIME_1	rtc_tests -device /dev/rtc -ioctltest readtime
+RTC_XS_FUNC_SETGETTIME	rtc_tests -device /dev/rtc -ioctltest setgettime
+RTC_XS_FUNC_SETGETTIME_30_DAY	rtc_tests -device /dev/rtc -ioctltest setgettime -ioctltestarg 1
+RTC_XS_FUNC_SETGETTIME_LEAP	rtc_tests -device /dev/rtc -ioctltest setgettime -ioctltestarg 2
+RTC_XS_FUNC_SETGETTIME_NONLEAP	rtc_tests -device /dev/rtc -ioctltest setgettime -ioctltestarg 3
+RTC_XS_FUNC_SET_ALARM_30_SECS	rtc_tests -device /dev/rtc -ioctltest alarm -ioctltestarg 30
+RTC_XS_FUNC_SET_HCTOSYS	rtc_hwclock.sh -r "19980318.012504" -y "rtc"
+RTC_XS_FUNC_SET_SYSTOHC	rtc_hwclock.sh -s "19980318.012504" -y "sys"
+RTC_XS_FUNC_SYSFS_ENTRY_PRESENT	check_rtc_sysfs.sh
+RTC_XS_FUNC_SYS_ENTRY_PRESENT	check_node_in_sysfs.sh -d "rtc" -m "1" -s "rtc0"
+RTC_XS_FUNC_UPDATE_INT_ON_OFF	rtc_tests -device /dev/rtc -ioctltest updateint
+SHA_XS_FUNC_SHA1_NI_TEST	sha_ni_test.sh -t sha_ni -n sha1 -a test
+SHA_XS_FUNC_SHA256_NI_TEST	sha_ni_test.sh -t sha_ni -n sha256 -a test
+DMA_XS_FUNC_ACPI_ENUM	dma_test.sh -l 1 -t 2
+DMA_XS_FUNC_DRV_CHECK	dma_test.sh -l 1 -t 1
+NVME_XS_FUNC_DEV_CHECK	blk_device_bat_test.sh -d "nvme" -c "2"
+NVME_XS_FUNC_DRV_CHECK	blk_device_bat_test.sh -d "nvme" -c "1"
+NVME_XS_FUNC_GET_NAME	blk_device_bat_test.sh -d "nvme" -c "3"
+NVME_XS_FUNC_MOUNT_PART	blk_device_bat_test.sh -d "nvme" -c "4"
+PCI_FUNC_ENUMERATION_DEVICE	pci_verifyer.sh -e
+PCI_FUNC_LIST_MODULES_LOADED	pci_verifyer.sh -m
+PCI_FUNC_NUMBER_OF_ROOT_PORTS	pci_verifyer.sh -n
+PCI_FUNC_PORT_KERNEL_DRIVER	pci_verifyer.sh -k
+PCI_FUNC_ROOT_PORT_CLASS	pci_verifyer.sh -c
+PCI_FUNC_ROOT_PORT_VENDOR_ID	pci_verifyer.sh -i
+PCI_XS_FUNC_GET_SPEED_WIDTH	pci_basic_tests.sh -c 1
+PCI_XS_FUNC_VERIFY_CONFIG	pci_basic_tests.sh -c 4
+PCI_XS_FUNC_VERIFY_DEV	pci_basic_tests.sh -c 3
+PCI_XS_FUNC_VERIFY_DRV	pci_basic_tests.sh -c 2
+PCIe_FUNC_ETH_PING_TG	iface=`pci_eth_search_device.sh` || die "error getting pcie eth interface name"; pci_run_eth_test.sh -i "$iface" -o 1
+PCIe_FUNC_ETH_PING_TG_MLT_PKG_SIZE	iface=`pci_eth_search_device.sh` || die "error getting pcie eth interface name"; pci_run_eth_test.sh -i "$iface" -o 3
+PCIe_FUNC_ETH_PING_TG_PKG_SIZE	iface=`pci_eth_search_device.sh` || die "error getting pcie eth interface name"; pci_run_eth_test.sh -i "$iface" -o 2
+SATA_XS_FUNC_AHCI_SPEC	blk_device_specification.sh -a
+SATA_XS_FUNC_DEV_CHECK	blk_device_bat_test.sh -d "sata" -c "2"
+SATA_XS_FUNC_DRV_CHECK	blk_device_bat_test.sh -d "sata" -c "1"
+SATA_XS_FUNC_ENUM_DEVICE	blk_device_specification.sh -e
+SATA_XS_FUNC_GEN3_SPEC	blk_device_specification.sh -g
+SATA_XS_FUNC_GET_NAME	blk_device_bat_test.sh -d "sata" -c "3"
+SATA_XS_FUNC_MOUNT_PART	blk_device_bat_test.sh -d "sata" -c "4"
+SATA_XS_FUNC_NCQ_SPEC	blk_native_command_queueing.sh -d "sata"
+SATA_XS_FUNC_POWER_MGMT_D0	blk_power_management.sh
+I2C_XS_BAT_CHAR_DEV_NODE_CHECK	i2c_bat_tests.sh -c check_char_node
+I2C_XS_BAT_DRV_CHECK	i2c_basic_tests.sh -c 0
+I2C_XS_FUNC_GET_FUNCTIONALITY	i2c_tests.sh -c functionality
+I2C_XS_FUNC_I2CBUSDETECT	i2c_tests.sh -c i2c_bus_detect
+I2C_XS_FUNC_I2CDETECT	i2c_tests.sh -c i2c_detect -l 1
+I2C_XS_FUNC_NEG_INVALID_ADDR	i2c_tests.sh -c neg_invalid_addr
+LPC_FUNC_BIND_UNBIND_ATKBD_DRIVER	bind_unbind_driver.sh "atkbd"
+LPC_FUNC_BIND_UNBIND_LPC_DRIVER	bind_unbind_driver.sh "lpc_ich"
+LPC_FUNC_BIND_UNBIND_PSMOUSE_DRIVER	bind_unbind_driver.sh "psmouse"
+LPC_FUNC_CHECK_ATKBD_DRIVER_PRECONDITIONS	driver_sysfs.sh -d "atkbd" -p
+LPC_FUNC_CHECK_ATKBD_DRIVER_SYSFS	driver_sysfs.sh -d "atkbd" -s "a"
+LPC_FUNC_CHECK_BOUNDS_SYSFS_PS2_CONNECTED	check_lpc_sysfs.sh
+LPC_FUNC_CHECK_LPC_DRIVER_PRECONDITIONS	driver_sysfs.sh -d "lpc_ich" -p
+LPC_FUNC_CHECK_PSMOUSE_DRIVER_PRECONDITIONS	driver_sysfs.sh -d "psmouse" -p
+LPC_FUNC_CHECK_PSMOUSE_DRIVER_SYSFS	driver_sysfs.sh -d "psmouse" -s "a"
+LPC_FUNC_LPC_DEVICES_CONNECTED	check_devices.sh
+PWM_XS_FUNC_BIND_UNBIND_DRIVER	bind_unbind_driver.sh "pwm"
+PWM_XS_FUNC_DRV_CHECK	driver_sysfs.sh -d "pwm" -p
+PWM_XS_FUNC_DRV_CHECK_LPSS	driver_sysfs.sh -d "pwm_lpss" -p
+PWM_XS_FUNC_DRV_CHECK_LPSS_PALTFORM	driver_sysfs.sh -d "pwm_lpss_platform" -p
+PWM_XS_FUNC_DRV_CHECK_LPSS_PCI	driver_sysfs.sh -d "pwm_lpss_pci" -p
+PWM_XS_FUNC_DRV_CHECK_REGULATOR	driver_sysfs.sh -d "pwm_regulator" -p
+PWM_XS_FUNC_INTEL_BLIGHT_0PER	pwm_backlight.sh -b "intel_backlight" -p 0 -i 1
+PWM_XS_FUNC_PWMCHIP_SYSFS	driver_sysfs.sh -d "pwm" -s h
+SMBUS_XS_BAT_DEV_CHECK	smbus_function_test.sh -r "DEV_CHECK"
+SMBUS_XS_BAT_DRV_CHECK	smbus_function_test.sh -r "DRV_CHECK"
+SMBUS_XS_FUNC_GET_FUNCTIONALITY	smbus_function_test.sh -r "GET_FUNCTIONALITY"
+SMBUS_XS_FUNC_NEG_INVALID_ADDR_REG_RD	smbus_function_test.sh -r "INVALID_ADDR_REG_RD"
+SMBUS_XS_FUNC_NEG_INVALID_ADDR_REG_WR	smbus_function_test.sh -r "INVALID_ADDR_REG_WR"
+SMBUS_XS_FUNC_POS_VALID_ADDR_REG_RD	smbus_function_test.sh -r "VALID_ADDR_REG_RD"
+SMBUS_XS_FUNC_POS_VALID_ADDR_REG_WR	smbus_function_test.sh -r "VALID_ADDR_REG_WR"
+SMBUS_XS_FUNC_RUNTIME_PM_AUTO_SUSPENDED	smbus_function_test.sh -r "RT_PM_AUTO_SUSPENDED"
+SMBUS_XS_FUNC_RUNTIME_PM_SUPPORT_CHECK	smbus_function_test.sh -r "RT_PM_CHECK"
+SMBUS_XS_FUNC_SLAVE_ADDR_DETECT	smbus_function_test.sh -r "SMBUS_ADDR_DETECT"
+SMBUS_XS_FUNC_VALID_ADDR_DUMP	smbus_function_test.sh -r "VALID_ADDR_DUMP"
+SPI-NOR_S_FUNC_BIOS_BACKUP_TEST	spi-nor-test.sh -r BIOS_BACKUP_TEST
+SPI-NOR_S_FUNC_BIOS_WRITABLE_TEST	spi-nor-test.sh -r WRITABLE_TEST
+SPI-NOR_S_FUNC_BIOS_WRITE_PROTECTION	spi-nor-test.sh -r WRITE_PROTECTION
+SPI-NOR_XS_BAT_BIND_UNBIND_DRV	bind_unbind_driver.sh "spi_nor"
+SPI-NOR_XS_BAT_BIOS_DEV_CHECK	spi_dev_info_check.sh -d "spi_nor" -m
+SPI-NOR_XS_BAT_DEV_CHECK	driver_sysfs.sh -d "spi_nor" -s "h"
+SPI-NOR_XS_BAT_DEV_ID_CHECK	spi_dev_info_check.sh -d "spi_nor" -p
+SPI-NOR_XS_BAT_DRV_CHECK	driver_sysfs.sh -d "spi_nor" -p
+SPI_XS_BAT_BIND_UNBIND_DRV	bind_unbind_driver.sh "spi"
+SPI_XS_BAT_DEV_CHECK	driver_sysfs.sh -d "spi" -s "h"
+SPI_XS_BAT_DEV_ID_CHECK	spi_dev_info_check.sh -d "spi" -p
+SPI_XS_BAT_DRV_CHECK	driver_sysfs.sh -d "spi" -p
+UART_XS_BAT_8250_DW_MODULE_CHECK	uart_bat_tests.sh -c 3
+UART_XS_BAT_8250_INITCALL_CHECK	uart_bat_tests.sh -c 0
+UART_XS_BAT_DRIVER_BIND_UNBIND_CHECK	uart_bat_tests.sh -c 4
+UART_XS_BAT_SERIAL_PCI_INITCALL_CHECK	uart_bat_tests.sh -c 1
+UART_XS_BAT_SYSFS_NODE_CHECK	uart_bat_tests.sh -c 2
+CPU_XS_BAT_CET_IBT_CPU_ID_TEST	cpu_bat.sh -n cet -p "7 0 0 0 d 20"
+CPU_XS_BAT_CET_IBT_CPU_INFO_TEST	cpu_bat.sh -n cet -f ibt
+CPU_XS_BAT_CET_SHSTK_CPU_ID_TEST	cpu_bat.sh -n cet -p "7 0 0 0 c 7"
+CPU_XS_BAT_CET_SHSTK_CPU_INFO_TEST	cpu_bat.sh -n cet -f shstk
+CPU_XS_BAT_UMIP_CPU_ID_TEST	cpu_bat.sh -n umip -p "7 1 0 1 c 2"
+CPU_XS_BAT_UMIP_CPU_INFO_TEST	cpu_bat.sh -n umip -f umip
+CPU_XS_BAT_UMIP_KCONFIG_UMIP_TEST	cpu_bat.sh -k "CONFIG_X86_INTEL_UMIP=y"
+CPU_XS_FUNC_UMIP_DMESG_SGDT	umip_func.sh -n umip_gp_test -p g -c sgdt
+CPU_XS_FUNC_UMIP_DMESG_SIDT	umip_func.sh -n umip_gp_test -p i -c sidt
+CPU_XS_FUNC_UMIP_DMESG_SLDT	umip_func.sh -n umip_gp_test -p l -c sldt
+CPU_XS_FUNC_UMIP_DMESG_SMSW	umip_func.sh -n umip_gp_test -p m -c smsw
+CPU_XS_FUNC_UMIP_DMESG_STR	umip_func.sh -n umip_gp_test -p t -c str
+CPU_XS_FUNC_UMIP_OPNDS_32_SLDT	umip_func.sh -n umip_test_opnds_32 -p l
+CPU_XS_FUNC_UMIP_OPNDS_32_SMSW	umip_func.sh -n umip_test_opnds_32 -p m
+CPU_XS_FUNC_UMIP_OPNDS_32_STR	umip_func.sh -n umip_test_opnds_32 -p t
+CPU_XS_FUNC_UMIP_OPNDS_64_SLDT	umip_func.sh -n umip_test_opnds_64 -p l
+CPU_XS_FUNC_UMIP_OPNDS_64_SMSW	umip_func.sh -n umip_test_opnds_64 -p m
+CPU_XS_FUNC_UMIP_OPNDS_64_STR	umip_func.sh -n umip_test_opnds_64 -p t
