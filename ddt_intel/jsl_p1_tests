@@ -4,7 +4,6 @@ ADAPTIVE_PEBS_XS_FUNC_IP_LEVEL_1	apebs_tests.sh -t ip_1 -w 0
 ADAPTIVE_PEBS_XS_FUNC_IP_LEVEL_2	apebs_tests.sh -t ip_2 -w 0
 ADAPTIVE_PEBS_XS_FUNC_LARGE_PEBS	apebs_tests.sh -t large_pebs -w 0
 ADAPTIVE_PEBS_XS_FUNC_LBR_LEVEL_1	apebs_tests.sh -t lbr_1 -w 0
-ADAPTIVE_PEBS_XS_FUNC_WITH_SR	apebs_tests.sh -t sr -w 0
 ADAPTIVE_PEBS_XS_FUNC_XMM_LEVEL_1	apebs_tests.sh -t xmm_1 -w 0
 CPU_XS_BAT_AESNI_CPU_ID_TEST	cpu_bat.sh -n aesni -p "1 0 0 0 c 25"
 CPU_XS_BAT_AESNI_CPU_INFO_TEST	cpu_bat.sh -n aesni -f aes
