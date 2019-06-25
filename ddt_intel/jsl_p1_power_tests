@@ -16,8 +16,6 @@ POWER_XS_FUNC_GOV_POWERSAVE_EPP_BALANCE_POWER	powermgr_pstate_tests.sh -c 17
 POWER_XS_FUNC_GOV_POWERSAVE_EPP_PERF	powermgr_pstate_tests.sh -c 15
 POWER_XS_FUNC_GOV_POWERSAVE_EPP_POWER	powermgr_pstate_tests.sh -c 18
 POWER_XS_FUNC_HWP_CPU_HOTPLUG	powermgr_pstate_tests.sh -c 19
-POWER_XS_FUNC_HWP_S2IDLE	powermgr_pstate_tests.sh -c 9
-POWER_XS_FUNC_HWP_S3	powermgr_pstate_tests.sh -c 1
 POWER_XS_FUNC_INTELIDLE_INITCALL	powermgr_dmesg_check.sh -t debug -p "$INTELIDLE_PATTERN"
 POWER_XS_FUNC_INTELIDLE_INITTIME	powermgr_dmesg_check.sh -t time -p "$INTELIDLE_PATTERN"
 POWER_XS_FUNC_INTELPSTATE_GOVERNOR_PERF	powermgr_pstate_tests.sh -c 4
