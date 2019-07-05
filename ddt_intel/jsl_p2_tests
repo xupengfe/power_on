@@ -1,33 +1,16 @@
 TH_MSU_XS_FUNC_BIND_UNBIND_DRIVER	bind_unbind_driver.sh "msc"
-TH_MSU_XS_FUNC_DEV_CHECK	driver_sysfs.sh -d "msc" -s "a"
 TH_MSU_XS_FUNC_DRV_CHECK	driver_sysfs.sh -d "msc" -p
 TH_PTI_XS_FUNC_BIND_UNBIND_DRIVER	bind_unbind_driver.sh "pti"
 TH_PTI_XS_FUNC_DRV_CHECK	driver_sysfs.sh -d "pti" -p
 TH_STH_XS_FUNC_BIND_UNBIND_DRIVER	bind_unbind_driver.sh "sth"
-TH_STH_XS_FUNC_DEV_CHECK	driver_sysfs.sh -d "sth" -s "a"
-TH_XS_FUNC_BIND_UNBIND_DRIVER	bind_unbind_driver.sh "ith"
-TH_XS_FUNC_DEV_CHECK	driver_sysfs.sh -d "ith" -s "a"
 TH_XS_FUNC_DUMMY_STM	intel_th_tests.sh -t dummy_stm
-TH_XS_FUNC_GTH_PORT_INFO	intel_th_tests.sh -t port_sys
 TH_XS_FUNC_GTH_SWITCH	intel_th_tests.sh -t gth_switch
-TH_XS_FUNC_HOST_MODE	intel_th_tests.sh -t host_mode
 TH_XS_FUNC_HOST_MODULE	intel_th_tests.sh -t host_module
-TH_XS_FUNC_IOCTL_GET_ID	intel_th_tests.sh -t ioctl_get
-TH_XS_FUNC_IOCTL_SET_ID	intel_th_tests.sh -t ioctl_set
-TH_XS_FUNC_MMAP_TRACE	intel_th_tests.sh -t mmap -d 0-msc0
-TH_XS_FUNC_MSU_BASIC	intel_th_tests.sh -t msu
 TH_XS_FUNC_MSU_ENABLE_DISABLE	intel_th_tests.sh -t msu_enable_disable
 TH_XS_FUNC_MSU_SYSFS	intel_th_tests.sh -t msu_sysfs
-TH_XS_FUNC_MULTI_TH_DEVICE	intel_th_tests.sh -t mth
-TH_XS_FUNC_MULTI_TH_DEVICE_W_CPU	intel_th_tests.sh -t mth_cpu
-TH_XS_FUNC_PCH_MSC0_CONSOLE_TRACE_BASIC	intel_th_tests.sh -t msu_trace -s console -d 0-msc0 -p basic
-TH_XS_FUNC_PCH_MSC0_DEFAULT_TRACE_BASIC	intel_th_tests.sh -t msu_trace -s default -d 0-msc0 -p basic
 TH_XS_FUNC_PCH_MSC_UNWRAP	intel_th_tests.sh -t unwrap -d 0-msc0
-TH_XS_FUNC_PCH_MSC_WRAP	intel_th_tests.sh -t wrap -d 0-msc0
 TH_XS_FUNC_STH_DEV	intel_th_tests.sh -t sth_dev
 TH_XS_FUNC_STM_POLICY_DUMMY	intel_th_tests.sh -t stm_policy_dummy
-TH_XS_FUNC_STM_POLICY_MASTER_CHANNEL_SET	intel_th_tests.sh -t stm_policy_set
-TH_XS_FUNC_STM_POLICY_STH	intel_th_tests.sh -t stm_policy_sth
 TH_XS_FUNC_STM_PROTOCOL_BASIC	intel_th_tests.sh -t protocol_basic
 TH_XS_FUNC_STM_SOURCE_ALL_WITH_DUMMY	intel_th_tests.sh -t stm_source_all_dummy
 WDT_XS_FUNC_BIND_UNBIND_DRV	bind_unbind_driver.sh "wdt"
@@ -49,10 +32,6 @@ GPIO_XS_FUNC_EXPORT_GPIOS	gpio_chips.sh -g "gpios" -e
 GPIO_XS_FUNC_GET_CHIPS	gpio_chips.sh -g "chips"
 GPIO_XS_FUNC_GET_GPIOS	gpio_chips.sh -g "gpios"
 GPIO_XS_FUNC_GET_SIGNALS	gpio_chips.sh -g "gpios" -e -s
-UFS_XS_FUNC_DEV_CHECK	blk_device_bat_test.sh -d "ufs" -c "2"
-UFS_XS_FUNC_DRV_CHECK	blk_device_bat_test.sh -d "ufs" -c "1"
-UFS_XS_FUNC_GET_NAME	blk_device_bat_test.sh -d "ufs" -c "3"
-UFS_XS_FUNC_MOUNT_PART	blk_device_bat_test.sh -d "ufs" -c "4"
 USBHOST_M_FUNC_EXT2_DD_RW_1G	blk_device_dd_readwrite_test.sh -f 'ext2' -b '10M' -c '100' -d 'usb'
 USBHOST_XS_FUNC_3.1_ROOTHUB	xhci_check.sh 3.1
 USBHOST_XS_FUNC_3.1_ROOTHUB_INFO	xhci_check.sh 3.1_info
